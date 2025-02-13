@@ -32,3 +32,37 @@ For the Trf versus normal (N) sibling RNAseq experiment, a segregating populatio
 
 _RNAseq Analysis_
 Sequence data was downloaded via ftp from Novogene servers and passed through the following analysis pipeline: FASTPQ(61) > HiSAT2(64) alignment to the Zea mays Reference NAM5.0 genome > FeatureCounts(65) > DeSeq2(66) analysis of differential gene expression using genes with more than 5 counts in 3 or more samples. All analysis was carried out locally (3.6GHz 8-Core Intel Core i9 processor, 32GB RAM) using R packages combined with Jupyter notebooks. Jupyter notebooks containing the code for RNAseq analysis are available at:       https://github.com/ThePlantShapeLab GO term analysis was carried out using the GAMER Maize annotations(67) and the GOSeq R package(68), significantly enriched GO terms had a Benjamini and Hochberg cutoff padj value of <0.05.
+
+_References_
+
+42. 	P. Cingolani, A. Platts, L. L. Wang, M. Coon, T. Nguyen, L. Wang, S. J. Land, X. Lu, D. M. Ruden, A program for annotating and predicting the effects of single nucleotide polymorphisms, SnpEff: SNPs in the genome of Drosophila melanogaster strain w1118; iso-2; iso-3. Fly (Austin) 6, 80–92 (2012).
+59. 	J. Chen, S. Dellaporta, “Urea-based plant DNA miniprep” in The Maize Handbook (Springer, 1994), pp. 526–527.
+60. 	C. Lunde, Small-scale DNA Extraction Method for Maize and Other Plants. Bio Protoc 8 (2018).
+61. 	S. Chen, Y. Zhou, Y. Chen, J. Gu, Fastp: An ultra-fast all-in-one FASTQ preprocessor. Fastp: An ultra-fast all-in-one FASTQ preprocessor, doi: 10.1101/274100 (2018).
+62. 	B. Langmead, S. L. Salzberg, Fast gapped-read alignment with Bowtie 2. Nat Methods 9, 357–359 (2012).
+63. 	P. Danecek, J. K. Bonfield, J. Liddle, J. Marshall, V. Ohan, M. O. Pollard, A. Whitwham, T. Keane, S. A. McCarthy, R. M. Davies, H. Li, Twelve years of SAMtools and BCFtools. Gigascience 10, giab008 (2021).
+64. 	D. Kim, J. M. Paggi, C. Park, C. Bennett, S. L. Salzberg, Graph-based genome alignment and genotyping with HISAT2 and HISAT-genotype. Nat Biotechnol, doi: 10.1038/s41587-019-0201-4 (2019).
+65. 	Y. Liao, G. K. Smyth, W. Shi, FeatureCounts: An efficient general purpose program for assigning sequence reads to genomic features. Bioinformatics, doi: 10.1093/bioinformatics/btt656 (2014).
+66. 	M. I. Love, W. Huber, S. Anders, Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biol, doi: 10.1186/s13059-014-0550-8 (2014).
+67. 	K. Wimalanathan, I. Friedberg, C. M. Andorf, C. J. Lawrence-Dill, Maize GO Annotation—Methods, Evaluation, and Review (maize-GAMER). Plant Direct, doi: 10.1002/pld3.52 (2018).
+68. 	M. D. Young, M. J. Wakefield, G. K. Smyth, A. Oshlack, Gene ontology analysis for RNA-seq: accounting for selection bias. Genome Biol, doi: 10.1186/gb-2010-11-2-r14 (2010).
+
+
+
+_Specific files_
+
+RNAseq Analysis Jupyter notebooks: 
+- Trf TRF_VegetativeShoot_Apex_RNAseq_BashCode_Alignments_2022.ipynb
+- Trf_DE_analysis_NAM5alignment_April2022_CleanForGitHub.ipynb
+
+WGS Analysis Jupyter notebooks:
+- TRF_WGS_NAM5_alignment_BashCode_202
+- Trf_WGS_NAM5_alignment_R_code.ipynb
+- Trf_WGS_PyVCF_code.ipynb
+- Trf_WGS_SnpEff_Bash_code.ipynb
+
+General Data Analysis:
+- Trf_Phenotype_and_ARFB_stability_DataAnalysis
+
+
+
