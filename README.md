@@ -54,6 +54,7 @@ _Specific files_
 RNAseq Analysis Jupyter notebooks: 
 - Trf TRF_VegetativeShoot_Apex_RNAseq_BashCode_Alignments_2022.ipynb
 - Trf_DE_analysis_NAM5alignment_April2022_CleanForGitHub.ipynb
+- R_analysis_Trf_Auxin_Treatment.ipynb
 
 WGS Analysis Jupyter notebooks:
 - TRF_WGS_NAM5_alignment_BashCode_202
